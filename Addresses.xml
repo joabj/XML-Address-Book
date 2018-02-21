@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="addresses.css"?>
+<!--Uncomment this if you plan to use the DTD instead of the schema. you must use on of the other: <!DOCTYPE document SYSTEM "addresses.dtd"> Take out stuff in document decalration just below starting with xmlns and to the end of the bracket-->
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="addresses.xsd">
+	<contact active="no">
+		<name>
+			<firstname>First name goes here</firstname>
+			<lastname>Last Name here</lastname>
+		</name>
+		<address>
+			<street1>Street address here</street1>
+			<street2>More street stuff here</street2>
+			<city>City Here </city>
+			<state> State </state>
+			<zip> zip </zip>
+		</address>
+		<info>
+			<hphone> Home phone </hphone>
+			<wphone> Work phone </wphone>
+			<cphone> Cell phone</cphone>
+			<wemail> Work Email </wemail>
+			<hemail1> Home email</hemail1>
+			<hemail2/>
+			<hemail3/>
+			<website> Web site</website>
+		</info>
+		<other> Whatever addiitonal info goes here 
+</other>
+	</contact>
+</document>

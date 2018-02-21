@@ -1,0 +1,20 @@
+BODY {Background-color: blue; margin-left: 0.5in; margin-right: 0.5in; font-family: Times}
+
+contact {display:block; border-style:ridge; padding:10; width:2in; background-color: aqua}
+
+firstname {font-size: 12 pt; text-align: left; font-weight:bold}
+lastname {font-size: 12 pt; text-align: left; font-weight:bold}
+street1 {display: block; font-size: 12 pt; text-align: left}
+street2 {font-size: 12 pt; text-align: left}
+city {font-size: 12 pt; text-align: left}
+state {font-size: 12 pt; text-align: left}
+zip {font-size: 12 pt; text-align: left}
+wphone {display: block; font-size: 12 pt; text-align: left}
+hphone {display: block; font-size: 12 pt; text-align: left}
+cphone {display: block; font-size: 12 pt; text-align: left}
+wemail {display: block; font-size: 12 pt; text-align: left}
+hemail1 {display: block; font-size: 12 pt; text-align: left}
+hemail2 {display: block; font-size: 12 pt; text-align: left}
+hemail3 {display: block; font-size: 12 pt; text-align: left}
+website {display: block; font-size: 12 pt; text-align: left}
+other {display: block; font-size: 12 pt; font-style: italic; text-align: left}

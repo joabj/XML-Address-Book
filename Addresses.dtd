@@ -1,0 +1,23 @@
+  <!ELEMENT document (contact)*>
+  <!ELEMENT contact (name, address, info, other)*>
+  <!ELEMENT name (firstname, lastname)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT address (street1, street2, city, state, zip)>
+  <!ELEMENT street1 (#PCDATA)> 
+  <!ELEMENT street2 (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT state (#PCDATA)>
+  <!ELEMENT zip (#PCDATA)>
+  <!ELEMENT info (hphone, wphone, cphone, wemail, hemail1, hemail2, hemail3, website)>
+  <!ELEMENT hphone (#PCDATA)>
+  <!ELEMENT wphone (#PCDATA)>
+  <!ELEMENT cphone (#PCDATA)>
+  <!ELEMENT wemail (#PCDATA)>
+  <!ELEMENT hemail1 (#PCDATA)>
+  <!ELEMENT hemail2 (#PCDATA)>
+  <!ELEMENT hemail3 (#PCDATA)>
+  <!ELEMENT website (#PCDATA)>
+  <!ELEMENT other (#PCDATA)>
+	<!ATTLIST contact active ( yes |  no ) #IMPLIED>
+

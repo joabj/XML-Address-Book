@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!--This is a schema for an address book. It is a flat catalog style of schema-->
+
+	<xs:element name="name" >
+		<xs:complexType>
+		<xs:sequence>  
+			<xs:element name="firstname" type="xs:string"/>
+			<xs:element name="lastname" type="xs:string"/>	
+		</xs:sequence>
+		</xs:complexType>	
+	</xs:element>
+
+	<xs:element name="address" >
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="street1" type="xs:string"/>
+			<xs:element name="street2" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="state" type="xs:string"/>
+			<xs:element name="zip" type="xs:string"/>
+			</xs:sequence>	
+		</xs:complexType>	
+	</xs:element>
+
+	<xs:element name="info" >
+		<xs:complexType>
+				<xs:sequence>
+			<xs:element name="hphone" type="xs:string"/>
+			<xs:element name="wphone" type="xs:string"/>
+			<xs:element name="cphone" type="xs:string"/>
+			<xs:element name="wemail" type="xs:string"/>
+			<xs:element name="hemail1" type="xs:string"/>
+			<xs:element name="hemail2" type="xs:string"/>
+			<xs:element name="hemail3" type="xs:string"/>
+			<xs:element name="website" type="xs:string"/>	
+			</xs:sequence>	
+		</xs:complexType>	
+	</xs:element>
+
+	<xs:element name="contact" >
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element ref="name" />
+			<xs:element ref="address" />
+			<xs:element ref="info" />
+			<xs:element name="other" type="xs:string"/>
+			</xs:sequence>
+					<xs:attribute name="active" type="xs:string"/>
+		</xs:complexType>	
+	</xs:element>
+
+	<xs:element name="document">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element ref="contact" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+
